@@ -1,0 +1,66 @@
+# ------------------------------
+# Node / Backend
+# ------------------------------
+
+# Dependencias de Node
+node_modules/
+
+# Archivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Archivos de entorno
+.env
+
+# Build de producción
+dist/
+build/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# ------------------------------
+# Frontend (React)
+# ------------------------------
+
+# Node / React
+node_modules/
+build/
+.cache/
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# ------------------------------
+# Otros
+# ------------------------------
+
+# Historias de Git
+*.orig
+
+# Cobertura de pruebas
+coverage/
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
