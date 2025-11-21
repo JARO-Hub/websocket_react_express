@@ -4,7 +4,7 @@ CubitoChat is a real-time chat application that allows users to join rooms by pr
 
 ## Preview
 
-<image src="login.jpeg" alt="login preview" width="45%" /> <image src="chat.jpeg" alt="chat preview" width="45%" />
+<image src="login.jpeg" alt="login preview" width="45%"></image> <image src="chat.jpeg" alt="chat preview" width="45%"></image>
 
 ## Features
 
