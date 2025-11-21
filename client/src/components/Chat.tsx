@@ -3,6 +3,7 @@ import { Socket } from "socket.io-client";
 import ScrollToBottom from "react-scroll-to-bottom";
 
 import IconSendFill from "./IconSendFill";
+import IconOnLine from "./IconOnLine.tsx";
 
 interface Props {
   socket: Socket;
@@ -75,6 +76,9 @@ const Chat = ({ socket, username, room }: Props) => {
                 }`}
               >
                 <p className="font-bold">{message.author}</p>
+              <IconOnLine>
+
+              </IconOnLine>
                 <p>{message.message}</p>
                 <p className="text-sm font-light text-end">{message.time}</p>
               </div>
