@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
+  html {
     @apply h-full w-full m-0 p-0;
   }
   
+  body {
+    @apply h-full w-full m-0 p-0 overflow-hidden;
+  }
+
   #root {
-    @apply h-full w-full;
+    @apply h-full w-full min-h-screen;
   }
 }
