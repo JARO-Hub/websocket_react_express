@@ -3,8 +3,7 @@
 const Message = require('../models/Message');
 
 /**
- * Servicio de mensajes - Capa de dominio
- * Este servicio maneja toda la lógica de negocio relacionada con mensajes
+ * Servicio de mensajes - Capa de dominio DAO
  */
 class MessageService {
   /**
@@ -24,9 +23,9 @@ class MessageService {
 
   /**
    * Obtiene todos los mensajes de una sala específica
-   * @param {String} room - Identificador de la sala
-   * @param {Number} limit - Límite de mensajes (default: 50)
-   * @returns {Promise<Array>} Lista de mensajes
+   * @param {String} room -
+   * @param {Number} limit - (default: 50)
+   * @returns {Promise<Array>}
    */
   async getMessagesByRoom(room, limit = 50) {
     try {
@@ -42,9 +41,9 @@ class MessageService {
 
   /**
    * Elimina mensajes antiguos de una sala (limpieza)
-   * @param {String} room - Identificador de la sala
-   * @param {Number} days - Días de antigüedad
-   * @returns {Promise<Object>} Resultado de la operación
+   * @param {String} room -
+   * @param {Number} days -
+   * @returns {Promise<Object>}
    */
   async deleteOldMessages(room, days = 30) {
     try {
@@ -63,8 +62,8 @@ class MessageService {
 
   /**
    * Obtiene estadísticas de una sala
-   * @param {String} room - Identificador de la sala
-   * @returns {Promise<Object>} Estadísticas de la sala
+   * @param {String} room -
+   * @returns {Promise<Object>}
    */
   async getRoomStats(room) {
     try {

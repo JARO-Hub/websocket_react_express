@@ -60,7 +60,7 @@ const oauthSuccess = async (req, res) => {
  * Controlador para fallo en la autenticación OAuth
  */
 const oauthFailure = (req, res) => {
-  console.error('❌ Autenticación con Google fallida');
+  console.error('autenticación con Google fallida');
 
   return res.status(401).json({
     error: 'Autenticación con Google fallida',

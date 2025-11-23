@@ -17,7 +17,7 @@ const authRequired = async (req, res, next) => {
       token = authHeader.split(' ')[1];
     }
 
-    // 2. Desde las cookies (alternativa)
+    // 2. Desde las cookies
     if (!token && req.cookies && req.cookies.token) {
       token = req.cookies.token;
     }
