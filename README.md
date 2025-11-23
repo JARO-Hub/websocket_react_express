@@ -1,18 +1,91 @@
-# SocketGram
+# CubitoChat - Real-time Chat Application 💬🚀
 
-CubitoChat is a real-time chat application that allows users to join rooms by providing their username and room name. The project leverages modern web technologies to deliver a smooth and responsive chat experience.
+> Aplicación de chat en tiempo real con WebSockets, Google OAuth 2.0 y arquitectura hexagonal
+
+[![Node.js](https://img.shields.io/badge/Node.js-20.11+-green.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18.3+-blue.svg)](https://reactjs.org/)
+[![Socket.io](https://img.shields.io/badge/Socket.io-4.7+-black.svg)](https://socket.io/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green.svg)](https://www.mongodb.com/)
+
+CubitoChat es una aplicación de chat en tiempo real que permite a los usuarios unirse a salas proporcionando su nombre de usuario y nombre de sala. El proyecto aprovecha tecnologías web modernas para ofrecer una experiencia de chat fluida y responsive.
 
 ## Preview
 
 <image src="login.jpeg" alt="login preview" width="45%" /> <image src="chat.jpeg" alt="chat preview" width="45%" />
 
-## Features
+## ✨ Características
 
-- **Real-time messaging**
-- **Room-based chat**
-- **User-friendly interface**
+- 🔐 **Autenticación completa con Google OAuth 2.0**
+- 💬 **Mensajería en tiempo real** con WebSockets (Socket.io)
+- 🏛️ **Arquitectura hexagonal** en backend y frontend
+- 🏠 **Chat basado en salas** dinámicas
+- 📱 **Interfaz responsive** con Tailwind CSS
+- 🗄️ **Persistencia** de mensajes en MongoDB
+- ✍️ **Indicador de escritura** en tiempo real
+- 📊 **Estadísticas de sala** en vivo
+- 👥 **Sistema de usuarios** con perfiles de Google
 
-## Technologies Used
+## 🚀 Inicio Rápido
+
+### Prerequisitos
+
+- Node.js v20.11+ o v22.12+
+- npm v10+
+- Cuenta de MongoDB Atlas (o MongoDB local)
+- (Opcional) Credenciales de Google OAuth para autenticación
+
+### Instalación y Configuración
+
+1. **Instalar dependencias**
+```bash
+# Backend
+cd backend
+npm install
+
+# Frontend  
+cd client
+npm install
+```
+
+2. **Configurar variables de entorno**
+
+Crea un archivo `.env` en la carpeta `backend/` con:
+```env
+PORT=4000
+MONGODB_URI=tu_mongodb_uri_aqui
+GOOGLE_CLIENT_ID=tu_google_client_id
+GOOGLE_CLIENT_SECRET=tu_google_client_secret
+GOOGLE_CALLBACK_URL=http://localhost:4000/auth/google/callback
+JWT_SECRET=tu_secreto_super_seguro
+FRONTEND_URL=http://localhost:5173
+```
+
+Crea un archivo `.env` en la carpeta `client/` con:
+```env
+VITE_SERVER_URL=http://localhost:4000
+```
+
+### Ejecutar la Aplicación
+
+```bash
+# Terminal 1: Iniciar Backend
+cd backend
+npm run dev
+
+# Terminal 2: Iniciar Frontend
+cd client
+npm run dev
+```
+
+La aplicación estará disponible en: `http://localhost:5173`
+
+## 📚 Documentación Completa
+
+- **[Documentación Técnica](./DOCUMENTATION.md)** - Arquitectura completa, APIs, eventos de Socket.io
+- **[Guía de Configuración de Google OAuth](./GOOGLE_OAUTH_SETUP.md)** - Paso a paso para configurar OAuth
+- **[Guía de Uso de Google Auth](./GOOGLE_AUTH_USAGE.md)** - Cómo funciona la autenticación
+
+## 🏗️ Tecnologías Utilizadas
 
 ### Frontend
 
