@@ -10,6 +10,7 @@ CubitoChat es una aplicación de chat en tiempo real que permite a los usuarios 
 
 ## Preview
 <image src="login.png" alt="login preview" width="45%" /> <image src="chat.png" alt="chat preview" width="45%" />
+
 ## ✨ Características
 
 - 🔐 **Autenticación completa con Google OAuth 2.0**
