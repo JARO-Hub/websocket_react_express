@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from '../pages/LoginPage';
 import ChatPage from '../pages/ChatPage'; 
-import ProtectedRoute from '../components/ProtectedRoute'; 
+import OAuthSuccessPage from '../pages/OAuthSuccessPage';
+import ProtectedRoute from '../components/ProtectedRoute';
 
 const AppRouter = () => {
   return (
@@ -12,6 +13,9 @@ const AppRouter = () => {
         {/* Ruta Pública de Login */}
         <Route path="/login" element={<LoginPage />} />
         
+        {/* Ruta de callback OAuth */}
+        <Route path="/oauth-success" element={<OAuthSuccessPage />} />
+
         {/* Rutas Protegidas (Usan el componente de protección) */}
         <Route element={<ProtectedRoute />}>
           
