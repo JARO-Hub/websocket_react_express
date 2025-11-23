@@ -13,6 +13,8 @@ import AppRouter from './router/AppRouter';
 import { AuthProvider } from './context/AuthContext';
 import './index.css'; // Mantenemos la importación de CSS si existe
 
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         {/* 2. Envolver toda la aplicación con el AuthProvider (HU5-T4) */}

@@ -43,6 +43,12 @@ function App() {
                     >
                         Join a Room
                     </button>
+                    <a
+                        href="http://localhost:4000/auth/google"
+                        className="p-2 bg-red-600 hover:bg-red-400 rounded-md font-medium w-[300px] text-center"
+                    >
+                        Sign in with Google
+                    </a>
                 </div>
             ) : (
                 <Chat socket={socket} username={username} room={room} />
