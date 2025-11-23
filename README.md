@@ -1,7 +1,6 @@
 # CubitoChat - Real-time Chat Application 💬🚀
 
 > Aplicación de chat en tiempo real con WebSockets, Google OAuth 2.0
-
 [![Node.js](https://img.shields.io/badge/Node.js-20.11+-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.3+-blue.svg)](https://reactjs.org/)
 [![Socket.io](https://img.shields.io/badge/Socket.io-4.7+-black.svg)](https://socket.io/)
@@ -9,6 +8,8 @@
 
 CubitoChat es una aplicación de chat en tiempo real que permite a los usuarios unirse a salas. El proyecto aprovecha tecnologías web modernas para ofrecer una experiencia de chat fluida y responsive.
 
+## Preview
+<image src="login.png" alt="login preview" width="45%" /> <image src="chat.png" alt="chat preview" width="45%" />
 ## ✨ Características
 
 - 🔐 **Autenticación completa con Google OAuth 2.0**
