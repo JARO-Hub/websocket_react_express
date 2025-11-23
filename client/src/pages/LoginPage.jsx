@@ -20,7 +20,7 @@ const LoginPage = () => {
       <div className="w-fit flex flex-col justify-center items-center text-center space-y-6 bg-gray-500/80 backdrop-blur-sm rounded-xl py-12 px-8 min-w-[400px]">
         <h1 className="text-4xl font-bold">Bienvenido a CubitoChat</h1>
         <p className="text-lg">Inicia sesión para comenzar a chatear</p>
-        <button
+        <button 
           onClick={handleLogin}
           className="px-6 py-3 text-lg font-medium bg-cyan-950 hover:bg-cyan-300 rounded-md transition-colors w-full"
         >
