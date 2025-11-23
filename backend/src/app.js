@@ -58,6 +58,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(3001, () => {
-    console.log("SERVER RUNNING");
+server.listen(process.env.PORT, () => {
+    console.log('SERVER RUNNING');
 });
